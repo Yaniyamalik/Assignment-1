@@ -1,0 +1,28 @@
+:root { --bg: #f5f7fa; --card: #fff; --ink: #14202e; --muted: #5b6b7c; --line: #dde3ea; --brand: #1d4ed8; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1720; --card: #17212c; --ink: #e8eef5; --muted: #9fb0c1; --line: #2a3745; --brand: #60a5fa; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.app { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
+header h1 { margin: 0; font-size: 24px; }
+header p { margin: 2px 0 16px; color: var(--muted); }
+nav { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+nav button { border: 1px solid var(--line); background: var(--card); color: var(--ink); padding: 8px 14px; border-radius: 8px; cursor: pointer; font: inherit; }
+nav button.active { background: var(--brand); border-color: var(--brand); color: #fff; }
+.cutoff { margin-left: auto; display: flex; gap: 8px; align-items: center; color: var(--muted); font-size: 13px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+.card h3 { margin: 0 0 12px; font-size: 16px; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 12px; }
+label { display: inline-flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); }
+.cutoff, .controls label { flex-direction: row; align-items: center; }
+select, input { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 8px; }
+.stat { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.stat-label { font-size: 12px; color: var(--muted); }
+.stat-value { font-size: 22px; font-weight: 600; }
+.unit { font-size: 13px; font-weight: 400; color: var(--muted); }
+.muted { color: var(--muted); } .small { font-size: 13px; }
+.error { color: #dc2626; }
+.banner { background: #fef3c7; color: #78350f; border: 1px solid #f59e0b; padding: 10px 14px; border-radius: 8px; margin-bottom: 16px; }
+@media (max-width: 600px) { .cutoff { margin-left: 0; width: 100%; } }
