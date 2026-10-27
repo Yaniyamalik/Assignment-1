@@ -7,7 +7,7 @@ January 2026:
 1. **What is the latest wind forecast available when I have to decide?** (Day-ahead decision view)
 2. **How wrong are those forecasts, quantitatively?** (Accuracy view, Lead-time view)
 
-**Live app:** `<add your Vercel URL here>`
+**Live app:** https://assignment-1-eight-chi.vercel.app/
 
 > **AI disclosure:** this project was built with the help of an AI assistant (Claude, by Anthropic) for
 > code, tests, and documentation. Design decisions and the final review are the author's responsibility.
